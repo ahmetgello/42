@@ -1,0 +1,1 @@
+cat /etc/passwd | grep -v '^#' | awk -F: '{print $1}' | sort -r | awk 'NR==1,NR==3 {print $1}' | tr '\n' ',' | sed 's/,$/\n/'
