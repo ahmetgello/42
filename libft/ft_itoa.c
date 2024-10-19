@@ -6,7 +6,7 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:27:34 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/16 11:10:38 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/19 15:03:44 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,7 @@ char	*ft_itoa(int n)
 	char			*s;
 	long int		len;
 	unsigned int	number;
-	int				sign;
 
-	sign = 1;
 	len = ft_digits(n);
 	s = (char *)malloc(sizeof(char) * (len + 1));
 	if (!s)
@@ -54,7 +52,6 @@ char	*ft_itoa(int n)
 		s[0] = '0';
 	if (n < 0)
 	{
-		sign *= -1;
 		number = n * -1;
 		s[0] = '-';
 	}

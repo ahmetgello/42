@@ -6,7 +6,7 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 15:09:42 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/16 12:38:14 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/19 15:36:25 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,19 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
 
-	i = 0;
-	while (s1[i] == s2[i] && i < n)
-		i++;
-	return (s1[i] - s2[i]);
+	ptr1 = (unsigned char *)s1;
+	ptr2 = (unsigned char *)s2;
+	while (n && *ptr1 && *ptr1 == *ptr2)
+	{
+		++ptr1;
+		++ptr2;
+		--n;
+	}
+	if (n)
+		return (*ptr1 - *ptr2);
+	else
+		return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 12:01:27 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/12 14:46:47 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/19 17:08:50 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char		*last;
-	char		find;
-	size_t		i;
+	int	i;
 
-	last = (char *)s;
-	find = (char)c;
 	i = ft_strlen(s);
-	while (i > 0)
+	while (i >= 0)
 	{
-		if (last[i] == find)
-			return (last + i);
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
 		i--;
 	}
-	if (last[i] == find)
-		return (last);
-	return (NULL);
+	return (0);
 }
