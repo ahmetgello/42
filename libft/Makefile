@@ -45,6 +45,7 @@ BONUS = ft_lstnew.c \
 		ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
+BONUSOBJS = $(BONUS:.c=.o)
 FLAGS = -Wall -Wextra -Werror -I.
 AR = ar -rcs
 
@@ -59,7 +60,7 @@ bonus:
 	$(AR) $(NAME) *.o
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUSOBJS)
 
 fclean: clean
 	rm -f $(NAME)
