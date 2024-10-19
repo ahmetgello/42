@@ -6,7 +6,7 @@
 /*   By: akallo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 11:14:45 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/19 11:16:53 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/19 13:36:18 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*list_ptr;
 
-	if (!lst)
+	if (!lst || !f)
 		return ;
 	list_ptr = lst;
 	while (list_ptr)

@@ -6,7 +6,7 @@
 /*   By: akallo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 10:37:21 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/19 11:02:55 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/19 13:21:18 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*last_node;
+	t_list	*node;
 
 	if (!lst)
 		return (NULL);
-	last_node = lst;
-	while (last_node->next)
-		last_node = last_node->next;
-	return (last_node);
+	node = lst;
+	while (node->next)
+		node = node->next;
+	return (node);
 }

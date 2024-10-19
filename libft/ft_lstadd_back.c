@@ -6,7 +6,7 @@
 /*   By: akallo <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 10:51:56 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/19 11:02:26 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/19 13:23:03 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*cur_node;
+	t_list	*node;
 
 	if (!lst || !new)
 		return ;
@@ -23,8 +23,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	cur_node = *lst;
-	while (cur_node->next)
-		cur_node = cur_node->next;
-	cur_node->next = new;
+	node = *lst;
+	while (node->next)
+		node = node->next;
+	node->next = new;
 }
