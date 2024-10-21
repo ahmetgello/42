@@ -6,11 +6,9 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:46:09 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/19 15:46:10 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/21 13:01:48 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

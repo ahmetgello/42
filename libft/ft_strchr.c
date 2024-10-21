@@ -6,11 +6,9 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:53:07 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/16 15:36:17 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/21 13:01:23 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

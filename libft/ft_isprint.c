@@ -6,11 +6,9 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:22:34 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/07 14:28:57 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/21 12:59:21 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

@@ -6,11 +6,9 @@
 /*   By: akallo <akallo@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:13:33 by akallo            #+#    #+#             */
-/*   Updated: 2024/10/07 14:14:40 by akallo           ###   ########.fr       */
+/*   Updated: 2024/10/21 12:59:10 by akallo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
